@@ -8,10 +8,6 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Challenges Faced](#challenges-faced)
-- [Contributing](#contributing)
-- [License](#license)
 
 ---
 
