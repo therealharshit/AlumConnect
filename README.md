@@ -55,16 +55,3 @@ Follow these steps to set up AlumConnect locally:
    git clone https://github.com/yourusername/AlumConnect.git
    cd AlumConnect
 =======
-# Getting Started with Create React App
-=======
-# AlumConnect
->>>>>>> 225eaf7 (code done)
-
-**AlumConnect** is a web-based platform designed to bridge the gap between alumni and students, fostering valuable connections for career guidance, mentorship, and networking. By enabling students to interact with experienced alumni, AlumConnect promotes a culture of knowledge-sharing and career growth, helping students make informed decisions about their professional paths.
-
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
