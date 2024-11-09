@@ -1,4 +1,3 @@
-/* Reset basic styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +15,7 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    
 }
 
 /* Header */
@@ -23,6 +23,9 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header .logo h1 {
@@ -30,10 +33,16 @@ header .logo h1 {
     margin: 0;
 }
 
+header nav {
+    flex: 1;
+    text-align: center;
+}
+
 header nav ul {
     list-style: none;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 header nav ul li {
@@ -43,6 +52,10 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+.cta-button {
+    margin-left: auto;
 }
 
 .cta-button .cta {
@@ -59,7 +72,7 @@ header nav ul li a {
     background: #3498db;
     color: #fff;
     text-align: center;
-    padding: 80px 0;
+    padding: 15px 0;
 }
 
 .hero h2 {
@@ -138,20 +151,20 @@ header nav ul li a {
     color: #fff;
 }
 
-.cta-section .cta {
-    background-color: #f39c12;
-    padding: 15px 30px;
-    text-decoration: none;
-    color: #fff;
-    border-radius: 5px;
-    font-size: 1.2em;
+.cta-section h2 {
+    margin-bottom: 20px;
+}
+
+.cta-section .cta.small-cta {
+    padding: 10px 20px;
+    font-size: 1em;
 }
 
 /* Footer Section */
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -174,4 +187,68 @@ footer .social a {
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .about h2, .features h2, .cta-section h2 {
+        font-size: 1.8em;
+    }
+
+    .features .feature-item h3 {
+        font-size: 1.5em;
+    }
+
+    .testimonials blockquote {
+        font-size: 1em;
+    }
+
+    .cta-section .cta, .hero .cta {
+        padding: 12px 24px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero h2 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 0.9em;
+    }
+
+    .cta-section .cta.small-cta {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
 }
